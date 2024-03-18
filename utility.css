@@ -1,0 +1,38 @@
+.border{
+    border: 2px solid black;
+    margin: 0.2%;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.item-center{
+align-items: center;
+
+}
+.rounded{
+    border-radius: 8px;
+}
+.m-1{
+    margin: 3px;
+}
+.p-1{
+    padding: 10px;
+}
+.circle{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.none {
+    display: none;
+}
+
+

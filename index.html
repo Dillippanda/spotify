@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" type="png" href="https://open.spotify.com/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="contener flex bg-black">
+        <div class="left">
+            <div class="close53">
+                <img class="invert" height="30px" src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-gray rounded m-1 ">
+                <div class="logo invert"><img width="100px" src="img/logo.svg" alt="spotify"></div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="home">Home</li>
+                    <li><img class="invert " src="img/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-gray   rounded">
+                <div class="heading">
+                    <img class="invert " src="img/playlist.svg" alt="playlist">
+                    <p>Your Library</p>
+                </div>
+                <div class="songlist">
+                    <ol>
+
+                    </ol>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a id="a" draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                            rel="noopener">
+                            <span>Cookies</span></a>
+                    </div>
+                    <div class="ff">
+                        <img class="invert " src="img/global.svg" alt="globe">
+                        <span>English</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="right   m-1 ">
+            <div class="header flex">
+                <div class="nav ">
+                    <img class="invert hamburger" src="img/hamburger.svg" alt="">
+                    <div class="circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                            color="#ffffff" fill="none">
+                            <path d="M17 4L8.66943 10.0405C6.44352 11.6545 6.44353 12.3455 8.66943 13.9595L17 20"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                            color="#ffffff" fill="none">
+                            <path d="M7 4L15.3306 10.0405C17.5565 11.6545 17.5565 12.3455 15.3306 13.9595L7 20"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons flex">
+                    <div class="button1"><button class="SignUp">Sign up</button></div>
+                    <div class="button2"><button class="Login">Log in</button></div>
+
+                </div>
+            </div>
+            <div class="spotifyPlaylist">
+                <div class="header2 item-center">
+                    <h2>Spotify Playlists</h2>
+                    <div class="show">
+                        <p>Show all</p>
+                    </div>
+                    
+                </div>
+                <div class="cardContener">
+
+                    <!-- <div data-folder="cs" class="card rounded none ">
+                        <div class="play">
+                            <svg width="65" height="65" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="#1ED760" />
+                                <polygon points="43,37 43,63 65,50" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img class="rounded " src="	https://i.scdn.co/image/ab67706f000000021bc15bd8a981369707fdec3d"
+                            alt="card">
+                        <h3>Hot Hits Punjabi</h3>
+                        <p>Catch the hottest Punjabi tracks with Sidhu Moose Wala for his track "Drippy"</p>
+                    </div>
+
+                    <div data-folder="cs" class="card rounded none ">
+                        <div class="play">
+                            <svg width="65" height="65" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="#1ED760" />
+                                <polygon points="43,37 43,63 65,50" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img class="rounded " src="	https://i.scdn.co/image/ab67706f00000002a11e0756ea85746dc69f258a"
+                            alt="card">
+                        <h3>Punjabi X</h3>
+                        <p>Catch all the collaborations and crossovers in Punjabi music. Cover: Guru Randhawa </p>
+                    </div>-->
+                    <div data-folder="_Love" class="card rounded none ">
+                        <div class="play">
+                            <svg width="65" height="65" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="#1ED760" />
+                                <polygon points="43,37 43,63 65,50" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img class="rounded " src="img/B.Mamu.jpg"
+                            alt="card">
+                        <h3>❤️ Love Hits ❤️</h3>
+                        <p>Love is composed of a single soul inhabiting two bodies</p>
+                    </div>
+                     
+                    <div data-folder="_sad" class="card rounded none">
+                        <div class="play">
+                            <svg width="65" height="65" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="#1ED760" />
+                                <polygon points="43,37 43,63 65,50" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img class="rounded " src="img/sad.jpg"
+                            alt="card">
+                        <h3>Sad Hindi Songs💔</h3>
+                        <p>Listen to the best sad songs of 2024</p>
+                    </div>
+<!--
+                    <div data-folder="ncs" class="card rounded">
+                        <div class="play">
+                            <svg width="65" height="65" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="#1ED760" />
+                                <polygon points="43,37 43,63 65,50" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img class="rounded " src="	https://i.scdn.co/image/ab67706f00000002ec94bf1083be30463d4b731d"
+                            alt="card">
+                        <h3>Chillhop</h3>
+                        <p>Blissed out beats and head nodding grooves - Relax, study and vibe.</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="play" onclick="startAudio('audioPlayer')">
+                            <svg width="65" height="65" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="#1ED760" />
+                                <polygon points="43,37 43,63 65,50" fill="#000000" />
+                            </svg>
+                        </div>
+
+                        <audio id="audioPlayer" controls style="display: none;">
+                            <source src="songs\ncs\Shiv Tandav.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+
+
+
+                        <img class="rounded " src="shiv-tandav-silhouette-red-aesthetic-qpyawyz3kimxxflf.jpg"
+                            alt="card">
+                        <h3>Shiv Tandav</h3>
+                        <p>Faith in God strengthens the soul</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="play" onclick="startAudio('audioPlayer2')">
+                            <svg width="65" height="65" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="#1ED760" />
+                                <polygon points="43,37 43,63 65,50" fill="#000000" />
+                            </svg>
+                        </div>
+
+                        <audio id="audioPlayer2" controls style="display: none;">
+                            <source src="Pagal.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+
+
+
+                        <img class="rounded " src="	https://i.scdn.co/image/ab67706f00000002603c97e588c19d27695b69c5"
+                            alt="card">
+                        <h3>All Out 2000s</h3>
+                        <p>The biggest songs of the 2000s. Cover: Kelly Clarkson</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="play">
+                            <svg width="65" height="65" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="#1ED760" />
+                                <polygon points="43,37 43,63 65,50" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img class="rounded " src="	https://i.scdn.co/image/ab67706f00000002c1811d50fbd4df02ea3b06a3"
+                            alt="card">
+                        <h3>Peaceful Guitar</h3>
+                        <p>Unwind to these calm classical guitar pieces.</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="play">
+                            <svg width="65" height="65" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="#1ED760" />
+                                <polygon points="43,37 43,63 65,50" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img class="rounded " src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d"
+                            alt="card">
+                        <h3>Chillout Lounge</h3>
+                        <p>Just lean back and enjoy relaxed beats.</p>
+                    </div>
+                    <div class="card rounded">
+                        <div class="play" onclick="startAudio('audioPlayer3')">
+                            <svg width="65" height="65" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="#1ED760" />
+                                <polygon points="43,37 43,63 65,50" fill="#000000" />
+                            </svg>
+                        </div>
+                        <audio id="audioPlayer3" controls style="display: none;">
+                            <source src="songs\ncs\Zaalim.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <img class="rounded " src="https://i.scdn.co/image/ab67706f000000024078b1cddeb67d8dd1db0cd8"
+                            alt="card">
+                        <h3>New in Dance</h3>
+                        <p>Badshah & Nora are back with 'Zaalim' beats! Don't miss it.</p>
+                    </div>  -->
+
+                   
+
+                    
+
+
+
+                </div>
+
+            </div>
+            <div class="playbar">
+                <div class="upseek">
+                    <div class="songinfo">
+
+                    </div>
+                    <div class="songbuttons">
+                        <img id="previous" src="img/previous.svg" alt="previous">
+                        <img id="playm" src="img/playm.svg" alt="play">
+                        <img id="next" src="img/next.svg" alt="next">
+                    </div>
+                    <div class="svolume">
+                    <div class="songTime">
+
+                    </div>
+                    <div class="volume">
+                        <img  id="vol" height="25px"  src="img/volume.svg" alt="">
+                        <div class="range">
+                            <input type="range" name="volume" id="vbar">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="seekbar">
+                    <div class="dseek"></div>
+                </div>
+                <div class="seek_circle">
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function startAudio(elementId) {
+            var audio = document.getElementById(elementId);
+            audio.play();
+        }
+    </script>
+</body>
+
+</html>
