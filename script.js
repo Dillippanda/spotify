@@ -121,7 +121,7 @@ currentSong.addEventListener("timeupdate",()=>{
     return songs
 }
 const playMusic=(track,pause=false)=>{
-     currentSong.src=`/${curfolder}/`+track;
+     currentSong.src=`${curfolder}`+track;
     console.log("dgdgsg "+currentSong.src)
     if(!pause){
 
