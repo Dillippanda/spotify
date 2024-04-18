@@ -19,7 +19,7 @@ return "00:00";
 
 async function getSongs(folder) {
     curfolder=folder;
-    let a = await fetch(`/${folder}/`)
+    let a = await fetch(`${folder}`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -31,14 +31,18 @@ async function getSongs(folder) {
             //  const Mp3 = element.href.replace(".mp3", "");
             //  const Mp2 = Mp3.replace("_320(PaglaSongs)", "");
 
-            songs.push(element.href.split(`/${folder}/`)[1])
+            songs.push(element.href.split(`${folder}`)[1])
         }
 
     }
 
     let songsOL = document.querySelector(".songlist").getElementsByTagName("ol")[0]
     songsOL.innerHTML=""
+     length=0;
+
     for (const song of songs){
+        length++;
+
         console.log("DKKP")
         songsOL.innerHTML = songsOL.innerHTML + `<li> <img class="invert" src="img/music.svg" alt="M">
          <div class="info">
@@ -63,7 +67,7 @@ async function getSongs(folder) {
     })
 
 //add an event listener to previous and next
-var length=songs.length;
+// var length=songs.length;
 document.getElementById('previous'). addEventListener("click",()=>{
      console.log("previous clicked")
      
