@@ -188,7 +188,7 @@ Array.from( document.getElementsByClassName("card")).forEach(e=>{
 
 async function main() {
 await getSongs("songs/ncs")
-playMusic(songs[0],true)
+playMusic(songs[1],true)
 // display all the albums on the page
     
 displayAlbums();
