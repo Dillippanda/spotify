@@ -187,8 +187,8 @@ Array.from( document.getElementsByClassName("card")).forEach(e=>{
 }
 
 async function main() {
-await getSongs("songs/ncs")
-playMusic(songs[1],true)
+await getSongs("songs/Daily Mix 1")
+playMusic(songs[0],true)
 // display all the albums on the page
     
 displayAlbums();
